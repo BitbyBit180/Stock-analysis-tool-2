@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Trend Analysis Tool</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Font Awesome for Icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="enigmajava.js"></script>
+
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Stock Trend Analysis Tool</h1>
+        <p>Empowering your trading decisions with AI-powered insights</p>
+    </header>
+
+    <!-- Dashboard -->
+    <div class="container">
+        <!-- Input Section -->
+        <section class="input-section">
+            <h2>Search Stock</h2>
+            <input type="text" id="stock-input" placeholder="Enter Stock Symbol (e.g., TCS, RELIANCE)">
+            <button onclick="fetchStockData()">Analyze</button>
+        </section>
+
+        <!-- Result Section -->
+        <section class="result-section">
+            <h2>Stock Analysis Results</h2>
+            <div id="results">
+                <p><strong>Stock Symbol:</strong> <span id="stock-symbol"></span></p>
+                <p><strong>Buy/Sell Signal:</strong> <span id="buy-sell"></span></p>
+                <p><strong>Sentiment Score:</strong> <span id="sentiment"></span></p>
+                <p><strong>Predicted Trend:</strong> <span id="trend"></span></p>
+            </div>
+        </section>
+
+        <!-- Chart Placeholder -->
+        <section class="chart-section">
+            <h2>Stock Price Chart</h2>
+            <div id="chart-placeholder">
+                <p>Chart will appear here (integrate chart libraries like Chart.js).</p>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Stock Trend Analysis Tool | Powered by AI & ML</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script> <!-- Correctly linked script file -->
+</body>
+</html>
